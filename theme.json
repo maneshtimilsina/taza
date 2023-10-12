@@ -240,7 +240,7 @@
     "blocks": {
       "core/button": {
         "border": {
-          "radius": "0px"
+          "radius": "5px"
         },
         "typography": {
           "lineHeight": "1"
