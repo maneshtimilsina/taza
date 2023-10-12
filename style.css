@@ -1,0 +1,71 @@
+/*
+Theme Name: Taza
+Theme URI: https://maneshtimilsina.com/themes/taza/
+Author: Manesh Timilsina
+Author URI: https://maneshtimilsina.com/
+Description: Simple, clean, and lightning fast Full Site Editing theme. Google Core Web Vitals and Search Engines optimized WordPress block theme.
+Requires at least: 6.0
+Tested up to: 6.3
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: taza
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, wide-blocks
+*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header .wp-block-navigation {
+  align-self: flex-end;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.wp-block-post-featured-image {
+  position: inherit;
+}
+
+.wp-block-comments.wp-block-comments-query-loop {
+  border-radius: 20px;
+  border: 1px solid var(--wp--preset--color--secondary);
+}
+
+.wp-block-post-comments-form .comment-reply-title {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1080px){
+  header {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 782px){
+  header.sticky {
+    position: sticky;
+    top: var(--wp--preset--spacing--small);
+  }
+}
+
+@media screen and (max-width: 1079px){
+  header {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 781px){
+  .site-wrap > .wp-block-group {
+    flex-direction: column;
+  }
+
+  header {
+    max-width: 100%;
+    width: 100%;
+  }
+}
