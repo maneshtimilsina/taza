@@ -5,9 +5,9 @@ Author: Manesh Timilsina
 Author URI: https://maneshtimilsina.com/
 Description: Simple, clean, and lightning fast Full Site Editing theme. Google Core Web Vitals and Search Engines optimized WordPress block theme.
 Requires at least: 6.0
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 5.6
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: taza
@@ -20,7 +20,15 @@ body {
 }
 
 header .wp-block-navigation {
-  align-self: flex-end;
+  width: 100%;
+}
+
+.wp-block-navigation__responsive-container-open {
+  margin-left: auto !important;
+}
+
+.wp-block-navigation__responsive-container-close {
+  right: 10px;
 }
 
 .main-content {
@@ -29,6 +37,10 @@ header .wp-block-navigation {
 
 .wp-block-post-featured-image {
   position: inherit;
+}
+
+.entry-content .wp-block-image {
+  margin: 1em 0;
 }
 
 .wp-block-comments.wp-block-comments-query-loop {
@@ -43,6 +55,7 @@ header .wp-block-navigation {
 @media screen and (min-width: 1080px){
   header {
     max-width: 340px;
+    min-width: 340px;
   }
 }
 
@@ -56,6 +69,13 @@ header .wp-block-navigation {
 @media screen and (max-width: 1079px){
   header {
     max-width: 250px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 840px){
+  header {
+    min-width: 250px;
   }
 }
 

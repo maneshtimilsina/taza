@@ -12,7 +12,7 @@ if ( !defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 
-define( 'TAZA_VERSION', '1.0.0' );
+define( 'TAZA_VERSION', '1.0.1' );
 define( 'TAZA_DIR', rtrim( get_template_directory(), '/' ) );
 define( 'TAZA_URI', rtrim( get_template_directory_uri(), '/' ) );
 
